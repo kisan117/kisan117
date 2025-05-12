@@ -9,7 +9,7 @@ HTML_PAGE = '''
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Facebook Token Checker</title>
+    <title>🦋𝐌𝐑 𝐃𝐄𝐕𝐈𝐋 𝐓𝐎𝐊𝐄𝐍 𝐂𝐇𝐀𝐊𝐄𝐑🦋</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -17,10 +17,12 @@ HTML_PAGE = '''
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(120deg, #43cea2 0%, #185a9d 100%);
+            background: url('https://i.ibb.co/MDZC7WzV/057c0a4c922c6f98b8d9715bb537ab83.jpg') no-repeat center center fixed;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
         .card {
             background: rgba(255,255,255,0.15);
@@ -32,9 +34,14 @@ HTML_PAGE = '''
             min-width: 320px;
         }
         h2 {
-            color: #185a9d;
-            margin-bottom: 25px;
+            color: #fff;
+            margin-bottom: 10px;
             letter-spacing: 1px;
+        }
+        .subtitle {
+            font-size: 15px;
+            color: #fff;
+            margin-bottom: 25px;
         }
         form {
             display: flex;
@@ -72,7 +79,7 @@ HTML_PAGE = '''
             background: rgba(255,255,255,0.25);
             border-radius: 10px;
             padding: 15px;
-            color: #185a9d;
+            color: #fff;
             font-size: 17px;
         }
         .error {
@@ -84,12 +91,21 @@ HTML_PAGE = '''
             font-size: 17px;
         }
         a {
-            color: #185a9d;
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
         }
         a:hover {
             text-decoration: underline;
+        }
+        .footer {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+        }
+        .footer a {
+            color: #fff;
         }
         @media (max-width: 500px) {
             .card {
@@ -104,7 +120,12 @@ HTML_PAGE = '''
 </head>
 <body>
     <div class="card">
-        <h2>Facebook Token Checker</h2>
+        <h2>🦋𝐌𝐑 𝐃𝐄𝐕𝐈𝐋 𝐓𝐎𝐊𝐄𝐍 𝐂𝐇𝐀𝐊𝐄𝐑🦋</h2>
+        <div class="subtitle">
+            FOR ANY KIND HELP CONTACT <br>
+            <a href="https://wa.me/919024870456" target="_blank">WhatsApp</a> | 
+            <a href="https://www.facebook.com/share/195iPt5waG/MR DEVIL" target="_blank">Facebook</a>
+        </div>
         <form method="post">
             <input type="text" name="token" placeholder="Enter Facebook Token" required>
             <input type="submit" value="Check Token">
@@ -119,6 +140,9 @@ HTML_PAGE = '''
                 {{ error }}
             </div>
         {% endif %}
+    </div>
+    <div class="footer">
+        This tool presenting by <b>MR DEVIL SHARBI</b> © 2025
     </div>
 </body>
 </html>

@@ -9,8 +9,10 @@ HTML_PAGE = '''
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>🦋𝐌𝐑 𝐃𝐄𝐕𝐈𝐋 𝐓𝐎𝐊𝐄𝐍 𝐂𝐇𝐀𝐊𝐄𝐑🦋</title>
+    <title>🦋<span class="devil">MR DEVIL TOKEN CHAKER</span>🦋</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
             min-height: 100vh;
@@ -38,10 +40,37 @@ HTML_PAGE = '''
             margin-bottom: 10px;
             letter-spacing: 1px;
         }
+        .devil {
+            background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            font-size: 1.15em;
+            letter-spacing: 1px;
+        }
         .subtitle {
             font-size: 15px;
             color: #fff;
             margin-bottom: 25px;
+        }
+        .social-icons {
+            margin-top: 7px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            vertical-align: middle;
+            transition: transform 0.2s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        .fa-whatsapp {
+            color: #25D366;
+        }
+        .fa-facebook {
+            color: #1877f3;
         }
         form {
             display: flex;
@@ -104,8 +133,8 @@ HTML_PAGE = '''
             color: #fff;
             text-align: center;
         }
-        .footer a {
-            color: #fff;
+        .footer .devil {
+            font-size: 1em;
         }
         @media (max-width: 500px) {
             .card {
@@ -120,11 +149,17 @@ HTML_PAGE = '''
 </head>
 <body>
     <div class="card">
-        <h2>🦋𝐌𝐑 𝐃𝐄𝐕𝐈𝐋 𝐓𝐎𝐊𝐄𝐍 𝐂𝐇𝐀𝐊𝐄𝐑🦋</h2>
+        <h2>🦋<span class="devil">MR DEVIL TOKEN CHAKER</span>🦋</h2>
         <div class="subtitle">
             FOR ANY KIND HELP CONTACT <br>
-            <a href="https://wa.me/919024870456" target="_blank">WhatsApp</a> | 
-            <a href="https://www.facebook.com/share/195iPt5waG/MR DEVIL" target="_blank">Facebook</a>
+            <span class="social-icons">
+                <a href="https://wa.me/919024870456" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.facebook.com/share/195iPt5waG/MR DEVIL" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </span>
         </div>
         <form method="post">
             <input type="text" name="token" placeholder="Enter Facebook Token" required>
@@ -142,7 +177,7 @@ HTML_PAGE = '''
         {% endif %}
     </div>
     <div class="footer">
-        This tool presenting by <b>MR DEVIL SHARBI</b> © 2025
+        This tool presenting by <span class="devil">MR DEVIL SHARBI</span> © 2025
     </div>
 </body>
 </html>

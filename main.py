@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template_string
 import requests
+import os
 
 app = Flask(__name__)
 
@@ -142,4 +143,5 @@ def index():
     return render_template_string(HTML_PAGE, uid=uid, error=error)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host='0.0.0.0', port=port)
